@@ -15,8 +15,6 @@ class App extends Component {
 
   }
 
-
-  
   checkMimeType = (event) => {
     //getting file object
     let files = event.target.files
@@ -161,53 +159,6 @@ class App extends Component {
   }
   render() {
     return (
-
-            <div>
-              <header id="&quot;header&quot;">
-                <div id="&quot;logo&quot;">
-                  <h1>CoolLogo</h1>
-                </div>
-              </header>
-              <main>
-                <div className="&quot;innertube&quot;">
-                  <h1>Heading</h1>
-                  <p />
-                </div>
-              </main>
-              <nav id="&quot;nav&quot;">
-                <div className="&quot;innertube&quot;">
-                  <h1>Heading</h1>
-                  <ul>
-                    <li><a href="&quot;#&quot;">Link 1</a></li>
-                    <li><a href="&quot;#&quot;">Link 2</a></li>
-                    <li><a href="&quot;#&quot;">Link 3</a></li>
-                    <li><a href="&quot;#&quot;">Link 4</a></li>
-                    <li><a href="&quot;#&quot;">Link 5</a></li>
-                  </ul>
-                  <h1>Heading</h1>
-                  <ul>
-                    <li><a href="&quot;#&quot;">Link 1</a></li>
-                    <li><a href="&quot;#&quot;">Link 2</a></li>
-                    <li><a href="&quot;#&quot;">Link 3</a></li>
-                    <li><a href="&quot;#&quot;">Link 4</a></li>
-                    <li><a href="&quot;#&quot;">Link 5</a></li>
-                  </ul>
-                  <h1>Heading</h1>
-                  <ul>
-                    <li><a href="&quot;#&quot;">Link 1</a></li>
-                    <li><a href="&quot;#&quot;">Link 2</a></li>
-                    <li><a href="&quot;#&quot;">Link 3</a></li>
-                    <li><a href="&quot;#&quot;">Link 4</a></li>
-                    <li><a href="&quot;#&quot;">Link 5</a></li>
-                  </ul>
-                </div>
-              </nav>	
-              "
-              document.write(info)
-            </div>
-          
-        
-      
       <div className="container">
         <div className="row">
           <div className="offset-md-3 col-md-6">
@@ -227,7 +178,7 @@ class App extends Component {
           </div>
         </div>
       </div>
-    
+    );
   }
 }
 
