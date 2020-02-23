@@ -110,7 +110,7 @@ class App extends Component {
               let result, confidence;
               let outputJSON;
               axios.defaults.headers.common['Content-Type'] = "application/json";
-              axios.defaults.headers.common['Authorization'] = "Bearer ya29.c.Ko8BvwePf9FEL8-rhOHw-c4Y3p0fw4TRha8cJ8LB6lWx0fkV-avLXji6mLkXvdrP_XTImuE0pbHTqM6Vw8_rXuuqL6UVTai82y-sJG49TQCj5V_OdEH4saJ2VrXczjxw1VPXeNLpMe4NE76oSrDTSmg_wYUe6lCMMSnpb7Uus6cVViUZhGvD7Rr8UrKDaKz1DJ8"
+              axios.defaults.headers.common['Authorization'] = "Bearer "/* Enter Access Token Here*/
               /* Copy token key here */;
 
               axios.post("https://automl.googleapis.com/v1beta1/projects/766644774605/locations/us-central1/models/ICN5802549470285529088:predict",
