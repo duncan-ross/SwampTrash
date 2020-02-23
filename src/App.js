@@ -163,7 +163,43 @@ class App extends Component {
         <div className="row">
           <div className="offset-md-3 col-md-6">
             <div className="form-group files">
-              <label>Upload Your File </label>
+            return (
+      <div>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>2 Rows, 2 Columns, A</title>
+        <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\n\t\tbody {\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t\toverflow: hidden;\n\t\t\theight: 100%; \n\t\t\tmax-height: 100%; \n\t\t\tfont-family:Sans-serif;\n\t\t\tline-height: 1.5em;\n\t\t}\n\t\t\n\t\t#header {\n\t\t\tposition: absolute;\n\t\t\ttop: 0;\n\t\t\tleft: 0;\n\t\t\twidth: 100%;\n\t\t\theight: 100px; \n\t\t\toverflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change \"hidden\" to \"scroll\" */\n\t\t\tbackground: #BCCE98;\n\t\t}\n\t\t\n\t\t#nav {\n\t\t\tposition: absolute; \n\t\t\ttop: 100px; \n\t\t\tleft: 0; \n\t\t\tbottom: 0;\n\t\t\twidth: 230px;\n\t\t\toverflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to \"hidden\", or use \"scroll\" to enable permanent scrollbars */\n\t\t\tbackground: #DAE9BC; \t\t\n\t\t}\n\t\t\n\t\t#logo {\n\t\t\tpadding:10px;\n\t\t}\n\t\t\n\t\tmain {\n\t\t\tposition: fixed;\n\t\t\ttop: 100px; /* Set this to the height of the header */\n\t\t\tleft: 230px; \n\t\t\tright: 0;\n\t\t\tbottom: 0;\n\t\t\toverflow: auto; \n\t\t\tbackground: #fff;\n\t\t}\n\t\t\n\t\t.innertube {\n\t\t\tmargin: 15px; /* Provides padding for the content */\n\t\t}\n\t\t\n\t\tp {\n\t\t\tcolor: #555;\n\t\t}\n\n\t\tnav ul {\n\t\t\tlist-style-type: none;\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t}\n\t\t\n\t\tnav ul a {\n\t\t\tcolor: darkgreen;\n\t\t\ttext-decoration: none;\n\t\t}\n\t\t\t\t\n\t\t/*IE6 fix*/\n\t\t* html body{\n\t\t\tpadding: 100px 0 0 230px; /* Set the first value to the height of the header and last value to the width of the nav */\n\t\t}\n\t\t\n\t\t* html main{ \n\t\t\theight: 100%; \n\t\t\twidth: 100%; \n\t\t}\n\t\t\n\t\t" }} />
+        <header id="header">
+          <div id="logo">
+            <h1>CoolLogo</h1>
+          </div>
+        </header>
+        <main>
+          <div className="innertube">
+            <h1>Heading</h1>
+            <p />
+          </div>
+        </main>
+        <nav id="nav">
+          <div className="innertube">
+            <h1>Heading</h1>
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+            <h1>Heading</h1>
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+            <h1>Heading</h1>
+            <ul>
+            <label>Upload Your File </label>
               <input type="file" className="form-control" multiple onChange={this.onChangeHandler} />
             </div>
             <div className="form-group">
@@ -174,6 +210,14 @@ class App extends Component {
 
             <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
             <button type="button" className="btn btn-success btn-block" onClick={this.onAnalyzeHandler}>Analyze</button>
+            </ul>
+          </div>
+        </nav>	
+      </div>
+      );
+  }
+}
+              
 
           </div>
         </div>
